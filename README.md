@@ -4,4 +4,4 @@ My goal is to work on the project in chunks over the next few days, and not to a
 
 ### 1/17: Finished the creation of the Set Deck - the model component behind the app.  
 * Sketched out the idea behind the app 
-** I see
+  * sdf
