@@ -17,9 +17,7 @@ My goal is to work on the project in chunks over the next few days, and not to a
   
 ### 1/18: Finished displaying the cards physically on screen. However, having a bit of difficulty lifting the child state onto the parent state - where I plan to keep all the logic pertaining to the game. 
 
-<img src="set1.png" alt="Day 2" width="200px" height="400px">
-
-The CSS rendering logic was kind of neat, I thought. I decided to use Font Awesome icons, since they closely resemble the original Set cards. The good thing about CSS styling + React is that you can <b>use Javascript to have flexible CSS styling</b>. So depending on the state of the card (which is a single element in our original array that contains properties like the color of our card, the number of elements, etc.), we can use bracket notation to denote the styling the element will eventually receive. 
+<img src="set1.png" alt="Day 2" width="200px" height="200px"> The CSS rendering logic was kind of neat, I thought. I decided to use Font Awesome icons, since they closely resemble the original Set cards. The good thing about CSS styling + React is that you can <b>use Javascript to have flexible CSS styling</b>. So depending on the state of the card (which is a single element in our original array that contains properties like the color of our card, the number of elements, etc.), we can use bracket notation to denote the styling the element will eventually receive. 
 
 The difficulty that I need to figure out is how to determine exactly which cards the player touched. I currently have the individual Card component as stateful (NOT what I want), and its easy to just write something like: ```state = { selected: false }```, and then use an <b>onClick</b> method to have ```this.setState({ selected: !this.state.selected })```. However, when we lift the state back up to the parent, instead of a single element, we need to write something like ```state = { selected: Array(12).fill(false) }```. Then, upon selecting a card, we need to keep track of that index and <b>that element in the array</b> to be true. 
 
