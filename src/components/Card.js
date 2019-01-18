@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './Card.css'
 
 let chooseShape = (x) => {
@@ -25,13 +25,32 @@ let chooseShade = (x) => {
   return shade
 }
 
-const Card = (props) => {
-  const card = <i className={chooseShade(props.shade) + ' ' + chooseShape(props.shape) + ' ' + props.color}></i>
-  return (
-    <div className="card">
-      {(props.number === 1) ? <h1 className="vertical shiftdown">{card}</h1> : (props.number === 2) ? <h1 className="vertical">{card}{card}</h1> : <h1 className="vertical shiftup">{card}{card}{card}</h1>}
-    </div>
-  )
+class Card extends Component {
+  state = {
+    selected: false
+  }
+  onClick = () => {
+    this.setState({
+      selected: !this.state.selected
+    })
+  }
+  render() {
+    const card = <i className={chooseShade(this.props.shade) + ' ' + chooseShape(this.props.shape) + ' ' + this.props.color}></i>
+    return (
+          <div className={(this.state.selected === false) ? 'card' : 'selected-card'} onClick={this.onClick}>
+          {(this.props.number === 1) ?
+          <h1 className="vertical shiftdown">
+            {card}{this.props.index}
+          </h1> : (this.props.number === 2) ?
+          <h1 className="vertical">
+            {card}{card}{this.props.index}
+          </h1> :
+          <h1 className="vertical shiftup">
+            {card}{card}{card}{this.props.index}
+          </h1>}
+          </div>
+    )
+  }
 }
 
 export default Card

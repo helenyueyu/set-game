@@ -7,6 +7,17 @@
   border: 3px solid black;
   border-radius: 10px;
 }
+.selected-card {
+  padding: 1rem;
+  width: 10vw;
+  height: 25vh;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgba(255, 250, 205); 
+}
+
 h1 {
   font-size: 3rem;
 }
