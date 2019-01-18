@@ -126,6 +126,8 @@ let checkSet = (numberToTest) => {
   }
 }
 
+// checkSet(50)
+
 // Sort the array but index
 let sortSet = (a,b) => {
   if (a.index < b.index) return -1

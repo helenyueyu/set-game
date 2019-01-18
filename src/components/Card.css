@@ -1,0 +1,38 @@
+.card {
+  padding: 1rem;
+  width: 10vw;
+  height: 25vh;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 3rem;
+}
+
+.opaque {
+  opacity: 0.3
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shiftup {
+  transform: translateY(-1.75rem)
+}
+.shiftdown {
+  transform: translateY(1.25rem)
+}
+
+.red {
+  color: red;
+}
+.purple {
+  color: purple;
+}
+.green {
+  color: green;
+}
