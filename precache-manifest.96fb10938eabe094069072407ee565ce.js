@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "277c105630a45cdfae69",
-    "url": "/set-game/static/css/main.401eb9db.chunk.css"
+    "revision": "de7798d3d622b8c80990",
+    "url": "/set-game/static/css/main.d77f0f6d.chunk.css"
   },
   {
-    "revision": "277c105630a45cdfae69",
-    "url": "/set-game/static/js/main.277c1056.chunk.js"
+    "revision": "de7798d3d622b8c80990",
+    "url": "/set-game/static/js/main.de7798d3.chunk.js"
   },
   {
     "revision": "4a34e45d34cafb7623bd",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/set-game/static/js/runtime~main.2dcdebaa.js"
   },
   {
-    "revision": "333c146d7050de13a2ba865721c9060e",
+    "revision": "31edabb0e9d59e21cdd6753e536ea7f3",
     "url": "/set-game/index.html"
   }
 ];

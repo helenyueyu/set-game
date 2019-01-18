@@ -1,0 +1,2 @@
+.row{display:flex;flex-direction:row}.card{padding:1rem;width:10vw;height:25vh;margin-bottom:1rem;margin-right:.5rem;border:3px solid #000;border-radius:10px}h1{font-size:3rem}.opaque{opacity:.3}.vertical{display:flex;flex-direction:column;justify-content:center;align-items:center}.shiftup{-webkit-transform:translateY(-1.75rem);transform:translateY(-1.75rem)}.shiftdown{-webkit-transform:translateY(1.25rem);transform:translateY(1.25rem)}.red{color:red}.purple{color:purple}.green{color:green}
+/*# sourceMappingURL=main.d77f0f6d.chunk.css.map */
